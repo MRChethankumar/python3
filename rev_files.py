@@ -1,0 +1,5 @@
+fhandler = open('file.txt', 'r')
+fhand = open('file2.txt', 'w')
+fhand.write(fhandler.read()[::-1].strip())
+fhandler.close()
+fhand.close()
